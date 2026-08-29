@@ -1,0 +1,29 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pesan - Vookuz</title><link rel="stylesheet" href="style.css"></head><body>
+<nav class="nav">
+  <a class="logo" href="index.html">VOOK<span>UZ</span><small>DIGITAL PRINTING</small></a>
+  <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+  <div class="navlinks">
+    <a href="index.html">Beranda</a><a href="produk.html">Produk</a><a href="pesan.html">Pesan</a>
+    <a href="cek-pesanan.html">Cek Pesanan</a><a href="tentang.html">Tentang</a>
+    <a class="btn" href="pesan.html">🛒 Pesan Sekarang</a>
+  </div>
+</nav>
+
+<section class="page-head"><h1>Pesan Online</h1><p>Isi data pesanan, lalu pesanan akan tercatat otomatis.</p></section>
+<div class="form-wrap"><form class="form-box" onsubmit="submitOrder(event)"><h2 style="margin-bottom:20px">Form Pesanan</h2><div class="form-grid">
+<div><label>Nama Customer</label><input name="nama" required placeholder="Masukkan nama"></div>
+<div><label>Nomor WhatsApp</label><input name="whatsapp" required placeholder="08xxxxxxxxxx"></div>
+<div><label>Produk</label><select name="produk"><option>Banner</option><option>Stiker Custom</option><option>Brosur</option><option>Kartu Nama</option><option>Poster</option></select></div>
+<div><label>Jumlah</label><input name="jumlah" type="number" min="1" value="1" required></div>
+<div><label>Total Harga</label><input name="total" type="number" required placeholder="Contoh: 50000"></div>
+<div><label>Status Pembayaran</label><select name="pembayaran"><option>Belum Dibayar</option><option>Sudah Dibayar</option></select></div>
+<div class="full"><label>Catatan Pesanan</label><textarea name="catatan" placeholder="Contoh ukuran, bahan, dan detail desain"></textarea></div>
+</div><button class="btn" style="margin-top:20px" type="submit">Kirim Pesanan</button><div id="orderResult" class="notice"></div></form></div>
+
+<footer>
+ <div class="footer-logo">VOOK<span>UZ</span> DIGITAL PRINTING</div>
+ <p>Solusi cetak digital untuk kebutuhan pribadi, bisnis dan promosi.</p>
+ <p style="margin-top:12px">© 2026 Vookuz Digital Printing</p>
+</footer>
+<script src="script.js"></script>
+</body></html>
